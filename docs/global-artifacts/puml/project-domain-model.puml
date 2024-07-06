@@ -1,0 +1,123 @@
+@startuml
+skinparam monochrome true
+skinparam packageStyle rectangle
+skinparam shadowing false
+
+skinparam classAttributeIconSize 0
+hide circle
+hide methods
+
+title Domain Model
+
+class Organization {
+}
+
+class FleetManager {
+}
+
+class HumanResourcesManager {
+}
+
+class GreenSpaceManager {
+}
+
+class Collaborator {
+    name
+    birthday
+    admissionDate
+    address
+    phoneNumber
+    email
+    IDDocType
+    IDNumber
+}
+
+class Skill {
+    name
+}
+
+class Job {
+    name
+    description
+}
+
+class Team {
+}
+
+class Vehicle {
+    brand
+    model
+    tare
+    grossWeight
+    currentKm
+    registerDate
+    acquisitionDate
+    maintenanceCheckUpFrequency
+    plateNumber
+}
+
+class CheckUp {
+    vehicle
+    date
+    kms
+}
+
+class VehicleType {
+    typeTransport
+    packageWeight
+    transport
+}
+
+class GreenSpace {
+    name
+    address
+    area
+}
+
+enum GreenSpaceType {
+    garden
+    mediumSizedPark
+    largeSizedPark
+}
+
+class Task {
+    title
+    description
+}
+
+enum EmergencyDegree {
+    high
+    medium
+    low
+}
+
+enum TaskType {
+    regular
+    occasional
+}
+
+enum TaskStatus {
+    pending
+    processed
+}
+
+class EntryAgenda {
+    startingDate
+}
+
+enum AgendaStatus {
+    planned
+    postponed
+    canceled
+    done
+}
+
+class Agenda {
+}
+
+class ToDoList {
+}
+
+@enduml
+
+
